@@ -1,0 +1,12 @@
+Cara instalasi dan Menambahkan akun ( Menggunakan akun sendiri )
+
+# Termux install ( Android )
+# pip install google-auth google-auth-oauthlib google-auth-httplib2 google-api-python-client rich
+
+# Ubuntu install ( VPS OTHER )
+# pip3 install google-auth google-auth-oauthlib google-auth-httplib2 google-api-python-client rich
+
+Untuk menambahkan akun silahkan baca files 🔴 Tambahkan akun.txt 🔴
+
+Mohon untuk membaca dengan teliti agar akun dapat di tambahkan 
+

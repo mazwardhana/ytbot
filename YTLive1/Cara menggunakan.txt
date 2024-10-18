@@ -1,0 +1,8 @@
+Cara menggunakan 
+
+Jalankan program python3 main.py pilih menu 3 untuk memulai Masukan link video YouTube yang sedang melakukan live streaming 
+
+contoh url
+https://www.youtube.com/live/vE79ohVKSDU?si=U92aLzyBen4C60KV
+
+Untuk menambahkan akun pilih menu 1 atau silahkan baca File txt Pembuatan akun.txt

@@ -1,0 +1,244 @@
+1. Buka https://console.cloud.google.com/
+
+2. Klik garis 3 di atas kiri 
+
+3. Klik Select a project 
+
+4  Klik New project 
+
+5  Akan Muncul informasi berikut 
+   
+   Project name
+   My Project 33XX
+   Location 
+   No organization
+   
+   Untuk Project name, Location, Lewatkan saja, Klik aja "Create"
+   
+6  Klik garis 3 di atas kiri "Lagi"
+
+7  Klik Select a project "Lagi"
+
+8  Setelah itu pilih project yang sudah d buat sebelumnya yang
+   "My Project 33XX"
+   
+9  Klik garis 3 di atas kiri "Lagi"
+
+10 Klik APis & Services pilih Library 
+
+11 Cari atau ketik "YouTube data api v3"
+
+12 Setelah itu Klik Logo YouTube 
+
+13 Setelah itu akan muncul "Enable" dan "Try This Api"
+
+14 Klik aja Enable 
+
+15 Setelah itu akan muncul seperti ini "To use this API, you may need credentials." [ CREATE CREDENTIALS ]
+
+16 Klik aja "CREATE CREDENTIALS"
+
+17 Setelah itu akan muncul seperti ini
+
+User data
+Data belonging to a Google user, like their email address or age. User consent required. This will create an OAuth client.
+
+Public data
+Google data that is publicly available, like public Maps data showing restaurant information. This will create an API key.
+
+18 Pilih aja "Public data" Klik saja Public data
+
+19 Setelah itu akan muncul "Done" klik aja ini
+
+20 Klik garis 3 di atas kiri "Lagi"
+
+21 Klik APis & Services pilih  OAuth consent screen
+
+22 Setalah itu akan muncul seperti ini
+
+User Type
+
+Internal
+Only available to users within your organization. You will not need to submit your app for verification. Learn more about user type 
+
+External
+Available to any test user with a Google Account. Your app will start in testing mode and will only be available to users you add to the list of test users. Once your app is ready to push to production, you may need to verify your app. Learn more about user type 
+
+23 Pilih saja "External"
+
+24 Setelah itu akan muncul seperti ini
+
+App name [ Masukan nama Bebas apa saja ]
+The name of the app asking for consent
+
+User support email [ Klik aja dan pilih email yang ada ]
+For users to contact you with questions about their consent. Learn more 
+
+App logo [ Lewatkan saja ]
+
+App domain [ Lewatkan saja ]
+
+Authorized domains [ Klik Add domain ] dan masukan domain google.com
+
+Developer contact information [ Masukan email yang login ke console.cloud.google.com ]
+
+25 Setelah itu klik "SAVE AND CONTINUE"
+
+26 Setelah itu akan menuju Scope
+
+Scopes express the permissions you request users to authorize for your app and allow your project to access specific types of private user data from their Google Account. Learn more 
+
+ADD OR REMOVE SCOPES 
+
+KLIK SAJA "ADD OR REMOVE SCOPES"
+
+SETELAH ITU AKAN MUNCUL 
+
+Manually add scopes
+If the scopes you would like to add do not appear in the table above, you can enter them here. Each scope should be on a new line or separated by commas. Please provide the full scope string (beginning with "https://"). When you are finished, click "Add to table".
+
+Scroll ke bawah selanjutnya masukkan url ini
+https://www.googleapis.com/auth/youtube.force-ssl
+
+SETELAH ITU KLIK "ADD TO TABEL"
+
+SETELAH ITU KLIK BUTTON WARNA BIRU "UPDATE" KLIK INI
+
+SCROLL KE BAWAH 
+
+SETELAH ITU AKAN MUNCUL SEPERTI INI
+
+Your restricted scopes
+Restricted scopes are scopes that request access to highly sensitive user data.
+
+KLIK SAJA BUTTON WARNA BIRU "SAVE AND CONTINUE"
+
+SETELAH ITU AKAN MENUJU KE BAGIA "TEST USER" KLIK SAJA "ADD USER"
+
+SETELAH ITU TAMBAHKAN EMAIL YANG LOGIN KE console.cloud.google.com
+
+SETELAH ITU KLIK "ADD"
+
+SETELAH ITU KLIK "SAVE AND CONTINUE"
+
+TAMBAHKAN LEBIH BANYAK TEST USER SEPERTI DI ATAS, TANPA HARUS MENGULANGI LAGI CARA SEPERTI INI TINGGAL MASUK KE OAUTH PLAYGROUND 
+
+SETELAH SUDAH MENUJU "SUMMARY"
+
+27 Klik garis 3 di atas kiri "Lagi"
+
+28 Klik APis & Services pilih Credentials 
+
+29 Selanjutnya klik dot 3 di bagian Credentials : yang warna biru itu
+
+30 Setelah itu Pilih "OAUTH CLIENT ID"
+
+31 Klik Application type pilih Web application 
+
+32 Setelah itu scroll ke bawah dan anda akan melihat Authorized redirect URIs
+
+KLIK WARNA BIRU "ADD URL"
+
+DAN MASUKAN 
+https://developers.google.com/oauthplayground
+
+SETELAH ITU KLIK "CREATE"
+
+DAN ANDA AKAN MELIHAT SEPERTI INI
+
+OAuth client created
+
+The client ID and secret can always be accessed from Credentials in APIs & Services
+
+COPY BAGIAN Client ID: 855688029285-lmljofie2ar89kmuujgqtdg5eheff924.apps.googleusercontent.com
+
+COPY BAGIAN Client secret: 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
+
+33 Selanjutnya buka link ini 
+    
+    Buka OAuth 2.0 Playground https://developers.google.com/oauthplayground/
+  
+      Klik ikon [ gear ]  di kanan atas dan centang Use your own OAuth credentials.
+   
+    SELANJUTNYA AKAN MUNCUL INI
+    
+    OAuth Client ID: MASUKAN CLIENT INI YANG SUDAH DI BUAT DI BAGIAN "32" YANG INI LOH 855688029285-lmljofie2ar89kmuujgqtdg5eheff924.apps.googleusercontent.com
+    
+    OAuth Client secret: MASUKAN CLIENT SECRET YANG SUDAH DI BUAT SEBELUM BAGIAN STEP "32" YANG INI LOH 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
+    
+    SELANJUTNYA KLIK CLOSE SAJA
+    
+    SELANJUTNYA Input your own scopes Masukan scope url ini
+    https://www.googleapis.com/auth/youtube.force-ssl
+    
+    SELANJUTNYA KLIK AUTHORIZED DAN ANDA AKAN LOGIN KE GOOGLE GUNAKAN AKUN YANG SEBELUMNYA LOGIN KE [[[ console.cloud.google.com ]]] NAH GUNAKAN AKUN ITU 
+    
+    SELANJUTNYA NANT AKA ADA HALAMAN SEPERTI INI
+    
+    Google hasn’t verified this app
+You’ve been given access to an app that’s currently being tested. You should only continue if you know the developer that invited you.
+
+       KLIK SAJA "CONTINUE"
+       SETELAH ITU "CONTINUE" LAGI
+       
+       SELANJUTNYA KLIK BUTTON WARNA BIRU YANG INI
+       "Exchange authorization code for tokens"
+       
+       NAH ITU KLIK SAJA YA
+       
+       SELANJUTNYA AKAN MUNCUL SEPERTI INI DI BAWAH KANAN
+       
+ {
+  "access_token": "ya29.a0AcM612yknDo5r7JMzAkGjat-5dtFnlmigMQGVzxeQNaf7nxdVmj6dJHyZCKFXzCTauu8eBSydXVm2_Tj6u3VBL1XipW9VuSwYUyzYYx_J8vXKBicT2coqwAiSVFOl47GhQ_f4vzwLw0K0hYGJgho_SvDeuk_t0wpya7B4YrzaCgYKAXESARESFQHGX2Mi1N-9izhy6z7LtsHQt7UH4A0175", 
+  "scope": "https://www.googleapis.com/auth/youtube.force-ssl", 
+  "token_type": "Bearer", 
+  "expires_in": 3599, 
+  "refresh_token": "1//04d4YmheIJfDSCgYIARAAGAQSNwF-L9IrCXit1lcC3Hy45vyEjNkVeXJ9df6pBK2Sk1c_5xTcFC8fzS3X44lYWdw1UUPoRCZztcs"
+}
+
+                        COPY BAGIAN ACCESS TOKEN DAN REFRESH TOKEN
+                        
+                YANG INI
+                
+                
+     INI ACCESS TOKEN 🔴
+       ya29.a0AcM612yknDo5r7JMzAkGjat-5dtFnlmigMQGVzxeQNaf7nxdVmj6dJHyZCKFXzCTauu8eBSydXVm2_Tj6u3VBL1XipW9VuSwYUyzYYx_J8vXKBicT2coqwAiSVFOl47GhQ_f4vzwLw0K0hYGJgho_SvDeuk_t0wpya7B4YrzaCgYKAXESARESFQHGX2Mi1N-9izhy6z7LtsHQt7UH4A0175
+       
+                        DAN YANG INI REFRESH TOKEN 🔴
+                        
+    1//04d4YmheIJfDSCgYIARAAGAQSNwF-L9IrCXit1lcC3Hy45vyEjNkVeXJ9df6pBK2Sk1c_5xTcFC8fzS3X44lYWdw1UUPoRCZztcs
+    
+    
+    NAH KALO INI CLIENT ID 🔴
+    
+    
+    855688029285-lmljofie2ar89kmuujgqtdg5eheff924.apps.googleusercontent.com
+    
+    
+    NAH KALO INI CLIENT SECRET 🔴
+    
+    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
+    
+    
+                        SELANJUTNYA JALANKAN SCRIPT PYTHON NYA 
+                        
+                        PYTHON3 MAIN.PY /// python3 main.py
+                        
+              
+       SETELAH ITU PILIH MENU 1 UNTUK ADD ACCOUNT / CLIENT
+       
+       MASUKAN ACCESS TOKEN :
+       MASUKAN REFRESH TOKEN : 
+       MASUKAN CLIENT ID :
+       MASUKAN CLIENT SECRET ;
+
+	
+	SEKARANG BUKA YOUTUBE DAN PILIH AKUN YANG SUDAH DI BUAT UNTUK OAUTH PLAYGROUND ATAU CONSOLE GOOGLE COM
+        BUAT CHANNEL DULU TERLEBIH DAHULU SEBELUM MENJALANKAN PYTHON KALO SUDAH BUAT JALANKAN PYTHON NYA
+    
+             SETELAH ITU PILIH MENU 3 UNTUK MEMULAI 
+                MASUKAN LINK YOUTUBE LIVE CHAT
+                
+                MASIH GAK PAHAM? GILA KALI
+
+
